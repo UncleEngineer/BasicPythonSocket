@@ -3,7 +3,7 @@
 import socket
 
 serverip = '192.168.0.100' #your ip
-port = 9000
+port = 9500
 
 while True:
 	server = socket.socket()
@@ -21,4 +21,4 @@ while True:
 
 	text = 'Server recieved your data'
 	client.send(text.encode('utf-8'))
-	client.close()
+	#client.close()
